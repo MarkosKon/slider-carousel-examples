@@ -9,6 +9,7 @@
     "format": "yarn lint --fix",
     "w:info": "yarn workspaces info",
     "example": "yarn workspace gatsby-theme-ui-starter",
+    "base": "yarn workspace base-example",
     "slick": "yarn workspace react-slick-example"
   },
   "devDependencies": {
