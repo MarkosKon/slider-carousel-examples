@@ -8,7 +8,8 @@
     "lint": "eslint --ext js,jsx examples",
     "format": "yarn lint --fix",
     "w:info": "yarn workspaces info",
-    "we1": "yarn workspace gatsby-theme-ui-starter"
+    "example": "yarn workspace gatsby-theme-ui-starter",
+    "slick": "yarn workspace react-slick-example"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
