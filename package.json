@@ -10,7 +10,8 @@
     "w:info": "yarn workspaces info",
     "example": "yarn workspace gatsby-theme-ui-starter",
     "base": "yarn workspace base-example",
-    "slick": "yarn workspace react-slick-example"
+    "slick": "yarn workspace react-slick-example",
+    "flickity": "yarn workspace flickity-example"
   },
   "devDependencies": {
     "eslint": "^6.0.1",

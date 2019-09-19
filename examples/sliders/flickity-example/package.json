@@ -1,0 +1,23 @@
+{
+  "name": "flickity-example",
+  "private": true,
+  "description": "Slider examples with flickity.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@affectionatedoor/gatsby-theme-ui": "^3.1.0",
+    "flickity": "^2.2.1",
+    "gatsby": "^2.15.16",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "typeface-pt-serif": "^0.0.72"
+  },
+  "devDependencies": {}
+}
