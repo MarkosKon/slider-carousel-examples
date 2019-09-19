@@ -10,6 +10,7 @@
     "w:info": "yarn workspaces info",
     "example": "yarn workspace gatsby-theme-ui-starter",
     "base": "yarn workspace base-example",
+    "tiny": "yarn workspace tiny-slider-example",
     "slick": "yarn workspace react-slick-example",
     "flickity": "yarn workspace flickity-example"
   },
