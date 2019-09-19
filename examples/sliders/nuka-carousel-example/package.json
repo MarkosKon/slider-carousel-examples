@@ -1,0 +1,23 @@
+{
+  "name": "nuka-carousel-example",
+  "private": true,
+  "description": "Sliders with nuka-carousel.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@affectionatedoor/gatsby-theme-ui": "^3.1.0",
+    "gatsby": "^2.15.16",
+    "nuka-carousel": "^4.5.12",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "typeface-pt-serif": "^0.0.72"
+  },
+  "devDependencies": {}
+}
