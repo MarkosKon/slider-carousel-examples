@@ -10,6 +10,7 @@ import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered"
 import BgImage from "@affectionatedoor/gatsby-theme-ui/src/components/BgImage";
 
 import CenteredExample from "../examples/CenteredExample";
+import ProductsExample from "../examples/ProductsExample";
 
 const Content = () => (
   <Fragment>
@@ -24,6 +25,7 @@ const Content = () => (
 
 const IndexPage = ({ data }) => {
   const cityImages = data.cityImages.nodes;
+  const mobilePhones = data.mobilePhones.nodes;
   return (
     <Layout>
       <Slider
@@ -33,7 +35,7 @@ const IndexPage = ({ data }) => {
         infinite={false}
         speed={500}
         slidesToShow={3}
-        slidesToScroll={1}
+        slidesToScroll={3}
         responsive={[
           {
             breakpoint: 1200,
@@ -69,6 +71,7 @@ const IndexPage = ({ data }) => {
         })}
       </Slider>
       <CenteredExample images={cityImages} />
+      <ProductsExample products={mobilePhones} />
     </Layout>
   );
 };
@@ -77,7 +80,10 @@ IndexPage.propTypes = {
   data: PropTypes.shape({
     cityImages: PropTypes.shape({
       nodes: PropTypes.arrayOf(PropTypes.object)
-    })
+    }).isRequired,
+    mobilePhones: PropTypes.shape({
+      nodes: PropTypes.arrayOf(PropTypes.object)
+    }).isRequired
   }).isRequired
 };
 
@@ -91,6 +97,20 @@ export const query = graphql`
       nodes {
         fluid {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mobilePhones: allProductsJson {
+      nodes {
+        skuid
+        title
+        price
+        image {
+          childImageSharp {
+            fluid(maxWidth: 76) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
         }
       }
     }

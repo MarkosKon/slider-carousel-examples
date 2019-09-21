@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Xiaomi Redmi Note 7 (64GB)",
+    "skuid": "17025989",
+    "image": "images/17025989.jpg",
+    "price": "160,92 €"
+  },
+  {
+    "title": "Samsung Galaxy A50 Dual (4GB/128GB)",
+    "skuid": "17872416",
+    "image": "images/17872416.jpg",
+    "price": "235,88 €"
+  },
+  {
+    "title": "Xiaomi Redmi 7 (32GB)",
+    "skuid": "17811843",
+    "image": "images/17811843.jpg",
+    "price": "112,85 €"
+  },
+  {
+    "title": "Xiaomi Redmi Note 6 Pro (64GB)",
+    "skuid": "15912019",
+    "image": "images/15912019.jpg",
+    "price": "157,19 €"
+  },
+  {
+    "title": "Samsung Galaxy A40 Dual (64GB)",
+    "skuid": "18115672",
+    "image": "images/18115672.jpg",
+    "price": "188,89 €"
+  },
+  {
+    "title": "Samsung Galaxy A20e Dual (32GB)",
+    "skuid": "18657849",
+    "image": "images/18657849.jpg",
+    "price": "125,46 €"
+  },
+  {
+    "title": "Samsung Galaxy S10+ Dual (128GB)",
+    "skuid": "17448628",
+    "image": "images/17448628.jpg",
+    "price": "650,14 €"
+  },
+  {
+    "title": "Xiaomi Mi A2 (64GB)",
+    "skuid": "15538676",
+    "image": "images/15538676.jpg",
+    "price": "138,26 €"
+  },
+  {
+    "title": "Samsung Galaxy S10 Dual (128GB)",
+    "skuid": "17444870",
+    "image": "images/17444870.jpg",
+    "price": "567,50 €"
+  }
+]
