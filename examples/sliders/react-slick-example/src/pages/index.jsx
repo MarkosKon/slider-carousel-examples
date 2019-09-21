@@ -9,6 +9,8 @@ import Layout from "@affectionatedoor/gatsby-theme-ui/src/components/Layout";
 import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered";
 import BgImage from "@affectionatedoor/gatsby-theme-ui/src/components/BgImage";
 
+import CenteredExample from "../examples/CenteredExample";
+
 const Content = () => (
   <Fragment>
     <p sx={{ fontSize: 4, lineHeight: 1.7, m: 0 }}>
@@ -55,7 +57,7 @@ const IndexPage = ({ data }) => {
                 overlayColor="#00000040"
               >
                 <Centered sx={{ color: "white" }}>
-                  <Styled.h2>
+                  <Styled.h2 as="h3">
                     Slide
                     {slideNo}
                   </Styled.h2>
@@ -66,6 +68,7 @@ const IndexPage = ({ data }) => {
           );
         })}
       </Slider>
+      <CenteredExample images={cityImages} />
     </Layout>
   );
 };
