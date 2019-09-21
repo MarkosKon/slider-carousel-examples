@@ -26,11 +26,11 @@ The library should be/have:
   - [Webflow template overview](https://webflow.com/templates/html/studies-education-website-template)
   - [flickity is-selected effect](https://codepen.io/desandro/pen/jEpxqJ)
   - [HOTA not a fan](https://hota.com.au/)
-- [Lamborghini three-js-like effect](https://www.lamborghini.com/en-en/)
+- [Products slider]()
 - [Smart slider Reveal animations](https://smartslider3.com/layer-slider-template/)
+- [Lamborghini three-js-like effect](https://www.lamborghini.com/en-en/)
 - [Video slider](https://theenglishbus.com/)
 - [Parallax Effect](https://themes.themegoods.com/hoteller/beach/)
-- [Products slider]()
 
 ## Photo Credits
 

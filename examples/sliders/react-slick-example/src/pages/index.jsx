@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /** @jsx jsx */
-import { Fragment } from "react";
 import { jsx, Styled, Box } from "theme-ui";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
@@ -11,17 +10,8 @@ import BgImage from "@affectionatedoor/gatsby-theme-ui/src/components/BgImage";
 
 import CenteredExample from "../examples/CenteredExample";
 import ProductsExample from "../examples/ProductsExample";
-
-const Content = () => (
-  <Fragment>
-    <p sx={{ fontSize: 4, lineHeight: 1.7, m: 0 }}>
-      Lorem, ipsum dolor sit amet consectetur.
-    </p>
-    <p sx={{ fontSize: 3 }}>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, culpa?
-    </p>
-  </Fragment>
-);
+import RevealExample from "../examples/RevealExample";
+import Content from "../components/Content";
 
 const IndexPage = ({ data }) => {
   const cityImages = data.cityImages.nodes;
@@ -72,6 +62,7 @@ const IndexPage = ({ data }) => {
       </Slider>
       <CenteredExample images={cityImages} />
       <ProductsExample products={mobilePhones} />
+      <RevealExample images={cityImages.slice(1, 4)} />
     </Layout>
   );
 };
@@ -95,7 +86,7 @@ export const query = graphql`
       filter: { fluid: { originalName: { regex: "/city/i" } } }
     ) {
       nodes {
-        fluid {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
