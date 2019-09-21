@@ -32,6 +32,14 @@ The library should be/have:
 - [Parallax Effect](https://themes.themegoods.com/hoteller/beach/)
 - [Products slider]()
 
+## Photo Credits
+
+- [city-1](Photo by Leo Cardelli from Pexels)
+- [city-2](Photo by Miki Czetti from Pexels)
+- [city-3](Photo by Matthew DeVries from Pexels)
+- [city-4](Photo by Josh Hild from Pexels)
+- [city-5](Photo by Jeswin Thomas from Pexels)
+
 ## Other Links
 
 - [WAI ARIA: Carousel Tutorial](https://www.w3.org/WAI/tutorials/carousels/)
