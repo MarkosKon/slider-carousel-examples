@@ -11,6 +11,7 @@ import BgImage from "@affectionatedoor/gatsby-theme-ui/src/components/BgImage";
 import CenteredExample from "../examples/CenteredExample";
 import ProductsExample from "../examples/ProductsExample";
 import RevealExample from "../examples/RevealExample";
+import ThumbnailExample from "../examples/ThumbnailExample";
 import Content from "../components/Content";
 
 const IndexPage = ({ data }) => {
@@ -63,6 +64,7 @@ const IndexPage = ({ data }) => {
       <CenteredExample images={cityImages} />
       <ProductsExample products={mobilePhones} />
       <RevealExample images={cityImages.slice(1, 4)} />
+      <ThumbnailExample images={cityImages} />
     </Layout>
   );
 };

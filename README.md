@@ -28,8 +28,9 @@ The library should be/have:
   - [HOTA not a fan](https://hota.com.au/)
 - [Products slider]()
 - [Smart slider Reveal animations](https://smartslider3.com/layer-slider-template/)
-- [Lamborghini three-js-like effect](https://www.lamborghini.com/en-en/)
+- [Lamborghini thumbnail](https://www.lamborghini.com/en-en/news/lamborghini-sian-the-first-hybrid-few-off#gallery-news)
 - [Video slider](https://theenglishbus.com/)
+- [Lamborghini three-js-like effect](https://www.lamborghini.com/en-en/)
 - [Parallax Effect](https://themes.themegoods.com/hoteller/beach/)
 
 ## Photo Credits
