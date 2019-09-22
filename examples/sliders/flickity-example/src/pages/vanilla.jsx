@@ -1,13 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /** @jsx jsx */
-import { useEffect, useRef, Fragment } from "react";
+import { useEffect, Fragment } from "react";
 import { jsx, Styled, Box } from "theme-ui";
 import Flickity from "flickity";
 import Layout from "@affectionatedoor/gatsby-theme-ui/src/components/Layout";
 import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered";
-
-let flkty;
-const contentSelector = ".flickity-slider .content";
 
 const Content = () => (
   <Fragment>
@@ -20,41 +17,25 @@ const Content = () => (
   </Fragment>
 );
 
-const IndexPage = () => {
-  const carouselRef = useRef();
+const VanillaPage = () => {
   useEffect(() => {
-    flkty = new Flickity(".carousel");
-
-    const { slides } = flkty;
-    const things = carouselRef.current.querySelectorAll(contentSelector);
-
-    function scrollHandler() {
-      slides.forEach((slide, i) => {
-        const thing = things[i];
-        const x = (slide.target + flkty.x) * 0.53;
-        thing.style.transform = `translateX(${-x}px)`;
-      });
-    }
-
-    flkty.on("scroll", scrollHandler);
+    // eslint-disable-next-line no-new
+    new Flickity(".carousel");
   }, []);
   return (
     <Layout>
-      <Styled.h1 sx={{ textAlign: "center" }}>Parallax example</Styled.h1>
-      <div className="carousel" ref={carouselRef}>
+      <Styled.h1 sx={{ textAlign: "center" }}>Vanilla example</Styled.h1>
+      <div className="carousel">
         <Box sx={{ width: "100%" }}>
           <Centered
             sx={{
               p: 4,
               minHeight: ["500px", "650px"],
-              bg: "secondary",
-              overflow: "hidden"
+              bg: "secondary"
             }}
           >
-            <div className="content">
-              <Styled.h2>Slide #1</Styled.h2>
-              <Content />
-            </div>
+            <Styled.h2>Slide #1</Styled.h2>
+            <Content />
           </Centered>
         </Box>
         <Box sx={{ width: "100%" }}>
@@ -63,14 +44,11 @@ const IndexPage = () => {
               p: 4,
               minHeight: ["500px", "650px"],
               bg: "primary",
-              color: "white",
-              overflow: "hidden"
+              color: "white"
             }}
           >
-            <div className="content">
-              <Styled.h2>Slide #2</Styled.h2>
-              <Content />
-            </div>
+            <Styled.h2>Slide #2</Styled.h2>
+            <Content />
           </Centered>
         </Box>
         <Box sx={{ width: "100%" }}>
@@ -79,14 +57,11 @@ const IndexPage = () => {
               p: 4,
               minHeight: ["500px", "650px"],
               bg: "accent",
-              color: "white",
-              overflow: "hidden"
+              color: "white"
             }}
           >
-            <div className="content">
-              <Styled.h2>Slide #3</Styled.h2>
-              <Content />
-            </div>
+            <Styled.h2>Slide #3</Styled.h2>
+            <Content />
           </Centered>
         </Box>
       </div>
@@ -94,4 +69,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default VanillaPage;
