@@ -2,13 +2,22 @@
 /** @jsx jsx */
 import { jsx, Styled, Box } from "theme-ui";
 import Slider from "react-slick";
+import LazyLoad from "react-lazyload";
 import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered";
 import Button from "@affectionatedoor/gatsby-theme-ui/src/components/Button";
-import video1 from "../videos/video-1.mp4";
-import video2 from "../videos/video-2.mp4";
-import video3 from "../videos/video-3.mp4";
+
+import video1 from "../videos/video-1-medium.mp4";
+import video2 from "../videos/video-2-medium.mp4";
+import video3 from "../videos/video-3-medium.mp4";
+// import video1 from "../videos/video-1.mp4";
+// import video2 from "../videos/video-2.mp4";
+// import video3 from "../videos/video-3.mp4";
+import poster1 from "../images/video-1-poster.jpg";
+import poster2 from "../images/video-2-poster.jpg";
+import poster3 from "../images/video-3-poster.jpg";
 
 const videos = [video1, video2, video3];
+const posters = [poster1, poster2, poster3];
 const overlays = ["#00000040", "#00000030", "#00000080"];
 
 const VideoExample = () => (
@@ -54,9 +63,19 @@ const VideoExample = () => (
     <Styled.h2 sx={{ textAlign: "center", mb: 2, mt: 7 }}>
       Video Example
     </Styled.h2>
-    <small sx={{ textAlign: "center", display: "block", mb: 4 }}>
-      Each video needs a fallback image, different video formats, and different
-      sizes to improve performance.
+    <small
+      sx={{
+        display: "block",
+        mb: 4,
+        mx: "auto",
+        maxWidth: "960px"
+      }}
+    >
+      The videos need additional formats. Different sizes depending on the
+      connection would also be nice, but it&apos;s not supported by default.
+      Finally, it&apos;s a really bad idea to show multiple autoplay videos in a
+      hero section like I do here; it&apos;s much better to show a single one
+      without a slider.
     </small>
     <Slider dots arrows={false} speed={500} slidesToShow={1} slidesToScroll={1}>
       {videos.map((videoSrc, i) => {
@@ -66,22 +85,24 @@ const VideoExample = () => (
             key={videoSrc}
             sx={{ position: "relative", width: "100vw", height: "100vh" }}
           >
-            <video
-              playsInline
-              autoPlay
-              muted
-              loop
-              // poster="poster.jpg"
-              sx={{
-                position: "absolute",
-                objectFit: "cover",
-                width: "100%",
-                height: "100%"
-              }}
-            >
-              {/* <source src="webm-format.webm" type="video/webm" /> */}
-              <source src={videoSrc} type="video/mp4" />
-            </video>
+            <LazyLoad height={500} once>
+              <video
+                playsInline
+                autoPlay
+                muted
+                loop
+                poster={posters[i]}
+                sx={{
+                  position: "absolute",
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%"
+                }}
+              >
+                {/* <source src="webm-format.webm" type="video/webm" /> */}
+                <source src={videoSrc} type="video/mp4" />
+              </video>
+            </LazyLoad>
             <div
               sx={{
                 position: "absolute",

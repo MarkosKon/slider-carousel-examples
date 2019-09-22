@@ -68,6 +68,7 @@ export const query = graphql`
   }
 `;
 
+// Experiments for a parallax effect with react-slick.
 // useEffect(() => {
 //   const track = document.querySelector(".slick-track");
 //   const config = { attributes: true, childList: false, subtree: false };
