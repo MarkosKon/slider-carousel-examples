@@ -52,6 +52,7 @@ Did most of them with `react-slick` except from the parallax effect which I did 
 - city-3.jpg: Photo by Matthew DeVries from Pexels
 - city-4.jpg: Photo by Josh Hild from Pexels
 - city-5.jpg: Photo by Jeswin Thomas from Pexels
+- city-6.jpg: Photo by Johannes Plenio from Pexels
 
 ## Video Credits
 

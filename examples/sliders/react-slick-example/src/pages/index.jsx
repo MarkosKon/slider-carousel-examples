@@ -1,66 +1,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /** @jsx jsx */
-import { jsx, Styled, Box } from "theme-ui";
+import { jsx } from "theme-ui";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
-import Slider from "react-slick";
 import Layout from "@affectionatedoor/gatsby-theme-ui/src/components/Layout";
-import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered";
-import BgImage from "@affectionatedoor/gatsby-theme-ui/src/components/BgImage";
 
 import CenteredExample from "../examples/CenteredExample";
 import ProductsExample from "../examples/ProductsExample";
 import RevealExample from "../examples/RevealExample";
 import ThumbnailExample from "../examples/ThumbnailExample";
 import VideoExample from "../examples/VideoExample";
-import Content from "../components/Content";
+import MultipleScrollExample from "../examples/MultipleScrollExample";
 
 const IndexPage = ({ data }) => {
   const cityImages = data.cityImages.nodes;
   const mobilePhones = data.mobilePhones.nodes;
   return (
     <Layout>
-      <Slider
-        dots
-        arrows={false}
-        infinite={false}
-        speed={500}
-        slidesToShow={3}
-        slidesToScroll={3}
-        responsive={[
-          {
-            breakpoint: 1200,
-            settings: { slidesToShow: 2 }
-          },
-          {
-            breakpoint: 600,
-            settings: { slidesToShow: 1 }
-          }
-        ]}
-      >
-        {cityImages.map(({ fluid }, i) => {
-          const slideNo = i + 1;
-          return (
-            <Box key={fluid.src} sx={{ p: 1 }}>
-              <BgImage
-                fluid={fluid}
-                title={`Slide ${slideNo}`}
-                height="700px"
-                mobileHeight="500px"
-                overlayColor="#00000040"
-              >
-                <Centered sx={{ color: "white" }}>
-                  <Styled.h2 as="h3">
-                    Slide
-                    {slideNo}
-                  </Styled.h2>
-                  <Content />
-                </Centered>
-              </BgImage>
-            </Box>
-          );
-        })}
-      </Slider>
+      <MultipleScrollExample images={cityImages} />
       <CenteredExample images={cityImages} />
       <ProductsExample products={mobilePhones} />
       <RevealExample images={cityImages.slice(1, 4)} />
