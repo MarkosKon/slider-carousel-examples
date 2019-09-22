@@ -7,9 +7,7 @@ import Slider from "react-slick";
 
 const CenteredExample = ({ images }) => (
   <Box
-    as="section"
     sx={{
-      py: [1, 4],
       px: [1, 4, 6],
       "& .slick-slide": {
         transition: "all .33s ease-in-out"
@@ -22,12 +20,11 @@ const CenteredExample = ({ images }) => (
     }}
   >
     <Styled.h2 sx={{ textAlign: "center" }}>Centered Example</Styled.h2>
-    <small
-      as="small"
+    <p
       sx={{ display: "block", textAlign: "center", mb: 4, fontStyle: "italic" }}
     >
       It&apos;s not 100% responsive
-    </small>
+    </p>
     <Slider
       dots
       arrows={false}

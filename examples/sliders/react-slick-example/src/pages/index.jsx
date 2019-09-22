@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, Styled, Box } from "theme-ui";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import Layout from "@affectionatedoor/gatsby-theme-ui/src/components/Layout";
@@ -17,12 +17,32 @@ const IndexPage = ({ data }) => {
   const mobilePhones = data.mobilePhones.nodes;
   return (
     <Layout>
-      <MultipleScrollExample images={cityImages} />
-      <CenteredExample images={cityImages} />
-      <ProductsExample products={mobilePhones} />
-      <RevealExample images={cityImages.slice(1, 4)} />
-      <ThumbnailExample images={cityImages} />
-      <VideoExample images={cityImages} />
+      <Box sx={{ textAlign: "center" }}>
+        <Styled.h1>Slider examples with react-slick.</Styled.h1>
+        <p>
+          <Styled.a href="/" target="noopener noreferrer">
+            Github repo
+          </Styled.a>
+        </p>
+      </Box>
+      <Box as="section" sx={{ mt: 5 }}>
+        <MultipleScrollExample images={cityImages} />
+      </Box>
+      <Box as="section" sx={{ my: 6 }}>
+        <CenteredExample images={cityImages} />
+      </Box>
+      <Box as="section" sx={{ my: 5 }}>
+        <ProductsExample products={mobilePhones} />
+      </Box>
+      <Box as="section" sx={{ my: 6 }}>
+        <RevealExample images={cityImages.slice(1, 4)} />
+      </Box>
+      <Box as="section" sx={{ my: 5 }}>
+        <ThumbnailExample images={cityImages} />
+      </Box>
+      <Box as="section" sx={{ mt: 7, mb: 5 }}>
+        <VideoExample images={cityImages} />
+      </Box>
     </Layout>
   );
 };

@@ -8,8 +8,8 @@ import Centered from "@affectionatedoor/gatsby-theme-ui/src/components/Centered"
 import Content from "../components/Content";
 
 const MultipleScrollExample = ({ images }) => (
-  <Box as="section">
-    <Styled.h2 sx={{ textAlign: "center", mt: 5 }}>
+  <Box>
+    <Styled.h2 sx={{ textAlign: "center" }}>
       Multiple items per scroll + gutter
     </Styled.h2>
     <Slider

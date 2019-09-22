@@ -7,7 +7,6 @@ import Slider from "react-slick";
 
 const ThumbnailExample = ({ images }) => (
   <Box
-    as="section"
     sx={{
       maxWidth: ["75%", "75%", "75%", "1000px"],
       margin: "auto",
@@ -47,12 +46,12 @@ const ThumbnailExample = ({ images }) => (
       }
     }}
   >
-    <Styled.h2 sx={{ textAlign: "center", mb: 2 }}>Thumbnail Example</Styled.h2>
-    <small sx={{ textAlign: "center", display: "block", mb: 4 }}>
+    <Styled.h2 sx={{ textAlign: "center" }}>Thumbnail Example</Styled.h2>
+    <p sx={{ textAlign: "center", display: "block", mb: 4 }}>
       You can add some more breakpoints to make this responsive, or you can just
       remove the arrows on smaller screens. You also have to reduce the
       thumbnail size on mobile screens.
-    </small>
+    </p>
     <Slider
       dots
       infinite={false}

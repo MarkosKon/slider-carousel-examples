@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Slider from "react-slick";
 
 const ProductsExample = ({ products }) => (
-  <Box as="section" sx={{ maxWidth: "80%", margin: "auto" }}>
+  <Box sx={{ maxWidth: "80%", margin: "auto" }}>
     <Styled.h2 sx={{ textAlign: "center" }}>Products Example</Styled.h2>
     <Slider
       dots

@@ -22,7 +22,6 @@ const overlays = ["#00000040", "#00000030", "#00000080"];
 
 const VideoExample = () => (
   <Box
-    as="section"
     sx={{
       // overriding styles is not so easy after all.
       ".slick-dots": {
@@ -60,10 +59,8 @@ const VideoExample = () => (
       }
     }}
   >
-    <Styled.h2 sx={{ textAlign: "center", mb: 2, mt: 7 }}>
-      Video Example
-    </Styled.h2>
-    <small
+    <Styled.h2 sx={{ textAlign: "center" }}>Video Example</Styled.h2>
+    <p
       sx={{
         display: "block",
         mb: 4,
@@ -76,7 +73,7 @@ const VideoExample = () => (
       Finally, it&apos;s a really bad idea to show multiple autoplay videos in a
       hero section like I do here; it&apos;s much better to show a single one
       without a slider.
-    </small>
+    </p>
     <Slider dots arrows={false} speed={500} slidesToShow={1} slidesToScroll={1}>
       {videos.map((videoSrc, i) => {
         const slideNo = i + 1;

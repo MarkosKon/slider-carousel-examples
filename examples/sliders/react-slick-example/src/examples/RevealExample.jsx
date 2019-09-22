@@ -17,7 +17,6 @@ const RevealExample = ({ images }) => {
   }, []);
   return (
     <Box
-      as="section"
       sx={{
         ".slick-arrow": {
           width: "50px",
@@ -43,7 +42,13 @@ const RevealExample = ({ images }) => {
         }
       }}
     >
-      <Styled.h2 sx={{ textAlign: "center" }}>Reveal Example</Styled.h2>
+      <Box sx={{ textAlign: "center", mb: 4, maxWidth: "960px", mx: "auto" }}>
+        <Styled.h2>Reveal Example</Styled.h2>
+        <p>
+          Better reveal once, it gets kind of silly. You can instead use
+          react-visibility-sensor and CSS animations.
+        </p>
+      </Box>
       <Slider
         dots
         infinite={false}
