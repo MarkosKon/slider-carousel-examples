@@ -23,7 +23,6 @@ const IndexPage = ({ data }) => {
       <Slider
         dots
         arrows={false}
-        // fade
         infinite={false}
         speed={500}
         slidesToShow={3}
