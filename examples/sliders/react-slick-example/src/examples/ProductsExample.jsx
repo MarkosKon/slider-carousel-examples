@@ -13,30 +13,38 @@ const ProductsExample = ({ products }) => (
       arrows={false}
       infinite={false}
       speed={500}
-      slidesToShow={1}
-      slidesToScroll={4}
-      variableWidth
+      slidesToShow={5}
+      slidesToScroll={5}
       responsive={[
         {
           breakpoint: 1200,
-          settings: { slidesToShow: 3 }
+          settings: { slidesToShow: 3, slidesToScroll: 3 }
         },
         {
-          breakpoint: 600,
-          settings: { slidesToShow: 2 }
+          breakpoint: 770,
+          settings: { slidesToShow: 2, slidesToScroll: 2 }
+        },
+        {
+          breakpoint: 420,
+          settings: { slidesToShow: 1, slidesToScroll: 1 }
         }
       ]}
     >
       {products.map(({ skuid, title, price, image }) => (
-        <Box key={skuid} sx={{ p: 3, width: "200px" }}>
-          <Flex sx={{ alignItems: "center", flexDirection: "column" }}>
+        <Box key={skuid} sx={{ p: 3 }}>
+          <Flex
+            sx={{
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column"
+            }}
+          >
             <Img
-              fluid={image.childImageSharp.fluid}
+              fixed={image.childImageSharp.fixed}
               title={title}
               alt={title}
-              sx={{ maxHeight: "100px", width: "100px" }}
             />
-            <Styled.h4>{title}</Styled.h4>
+            <Styled.h4 sx={{ textAlign: "center" }}>{title}</Styled.h4>
             <p>{price}</p>
           </Flex>
         </Box>

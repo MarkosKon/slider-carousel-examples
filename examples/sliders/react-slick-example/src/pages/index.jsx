@@ -78,8 +78,8 @@ export const query = graphql`
         price
         image {
           childImageSharp {
-            fluid(maxWidth: 76) {
-              ...GatsbyImageSharpFluid_tracedSVG
+            fixed(height: 150) {
+              ...GatsbyImageSharpFixed_tracedSVG
             }
           }
         }
