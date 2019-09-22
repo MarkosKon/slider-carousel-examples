@@ -48,6 +48,7 @@ const CenteredExample = ({ images }) => {
         centerPadding="350px"
         slidesToShow={1}
         slidesToScroll={1}
+        initialSlide={2}
         responsive={[
           {
             breakpoint: 1500,

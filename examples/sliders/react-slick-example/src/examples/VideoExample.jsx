@@ -65,7 +65,8 @@ const VideoExample = () => (
         display: "block",
         mb: 4,
         mx: "auto",
-        maxWidth: "960px"
+        maxWidth: "960px",
+        p: 3
       }}
     >
       The videos need additional formats. Different sizes depending on the
