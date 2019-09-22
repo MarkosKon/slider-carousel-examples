@@ -41,6 +41,12 @@ The library should be/have:
 - [city-4](Photo by Josh Hild from Pexels)
 - [city-5](Photo by Jeswin Thomas from Pexels)
 
+## Video Credits
+
+- [video-1](Video by sten from Pexels)
+- [video-2](Video by invisiblepower from Pexels)
+- [video-3](Video by Tom Fisk from Pexels)
+
 ## Other Links
 
 - [WAI ARIA: Carousel Tutorial](https://www.w3.org/WAI/tutorials/carousels/)

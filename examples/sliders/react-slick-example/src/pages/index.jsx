@@ -12,6 +12,7 @@ import CenteredExample from "../examples/CenteredExample";
 import ProductsExample from "../examples/ProductsExample";
 import RevealExample from "../examples/RevealExample";
 import ThumbnailExample from "../examples/ThumbnailExample";
+import VideoExample from "../examples/VideoExample";
 import Content from "../components/Content";
 
 const IndexPage = ({ data }) => {
@@ -65,6 +66,7 @@ const IndexPage = ({ data }) => {
       <ProductsExample products={mobilePhones} />
       <RevealExample images={cityImages.slice(1, 4)} />
       <ThumbnailExample images={cityImages} />
+      <VideoExample images={cityImages} />
     </Layout>
   );
 };
