@@ -21,7 +21,10 @@ const IndexPage = ({ data }) => {
       <Box sx={{ textAlign: "center" }}>
         <Styled.h1>Slider examples with react-slick.</Styled.h1>
         <p>
-          <Styled.a href="/" target="noopener noreferrer">
+          <Styled.a
+            href="https://github.com/MarkosKon/slider-carousel-examples"
+            target="noopener noreferrer"
+          >
             Github repo
           </Styled.a>
         </p>

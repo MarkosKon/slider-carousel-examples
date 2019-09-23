@@ -13,7 +13,8 @@
     "nuka": "yarn workspace nuka-carousel-example",
     "tiny": "yarn workspace tiny-slider-example",
     "slick": "yarn workspace react-slick-example",
-    "flickity": "yarn workspace flickity-example"
+    "flickity": "yarn workspace flickity-example",
+    "deploy:slick": "netlify deploy --prod --dir=examples/sliders/react-slick-example/public"
   },
   "devDependencies": {
     "eslint": "^6.0.1",

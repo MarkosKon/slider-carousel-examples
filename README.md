@@ -1,5 +1,7 @@
 # Sliders
 
+[Live examples with react-slick](https://slider-examples.netlify.com)
+
 ## Libraries
 
 [NPM Trends comparison](https://www.npmtrends.com/react-slick-vs-tiny-slider-vs-flickity-vs-react-swipe-vs-react-slider-vs-nuka-carousel-vs-react-responsive-carousel) for popular slider/carousel libraries.
