@@ -44,7 +44,9 @@ const ProductsExample = ({ products }) => (
               title={title}
               alt={title}
             />
-            <Styled.h4 sx={{ textAlign: "center" }}>{title}</Styled.h4>
+            <Styled.a href="/" sx={{ mt: 3, textAlign: "center" }}>
+              {title}
+            </Styled.a>
             <p>{price}</p>
           </Flex>
         </Box>
