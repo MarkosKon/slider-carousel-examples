@@ -26,17 +26,9 @@ const CenteredExample = ({ images }) => {
         }
       }}
     >
-      <Styled.h2 sx={{ textAlign: "center" }}>Centered Example</Styled.h2>
-      <p
-        sx={{
-          display: "block",
-          textAlign: "center",
-          mb: 4,
-          fontStyle: "italic"
-        }}
-      >
-        It&apos;s not 100% responsive
-      </p>
+      <Styled.h2 sx={{ textAlign: "center", mb: 4 }}>
+        Centered Example
+      </Styled.h2>
       <Slider
         // double render hack.
         key={isClient}
