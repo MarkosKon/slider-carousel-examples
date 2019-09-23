@@ -11,6 +11,7 @@ import RevealExample from "../examples/RevealExample";
 import ThumbnailExample from "../examples/ThumbnailExample";
 import VideoExample from "../examples/VideoExample";
 import MultipleScrollExample from "../examples/MultipleScrollExample";
+import ProductsExampleScroll from "../examples/ProductsExampleScroll";
 
 const IndexPage = ({ data }) => {
   const cityImages = data.cityImages.nodes;
@@ -40,8 +41,11 @@ const IndexPage = ({ data }) => {
       <Box as="section" sx={{ my: 5 }}>
         <ThumbnailExample images={cityImages} />
       </Box>
-      <Box as="section" sx={{ mt: 7, mb: 5 }}>
+      <Box as="section" sx={{ mt: 7 }}>
         <VideoExample images={cityImages} />
+      </Box>
+      <Box as="section" sx={{ my: 5 }}>
+        <ProductsExampleScroll products={mobilePhones} />
       </Box>
     </Layout>
   );
