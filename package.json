@@ -17,7 +17,7 @@
     "deploy:slick": "netlify deploy --prod --dir=examples/sliders/react-slick-example/public"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^9.26.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-cypress": "^2.2.1",
